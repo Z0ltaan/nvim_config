@@ -1,0 +1,17 @@
+return {
+  require 'plugins.which_key',
+  require 'plugins.blink_config',
+  require 'plugins.devicons',
+  require 'plugins.fzf',
+  require 'plugins.lazydev_config',
+  require 'plugins.lspconfig_config',
+  require 'plugins.conform_config',
+  require 'plugins.colorscheme',
+  require 'plugins.todocomments_config',
+  require 'plugins.mini_config',
+  require 'plugins.treesitter_config',
+  require 'plugins.breadcrumbs',
+  require 'kickstart.plugins.autopairs',
+  require 'plugins.mdrenderer_config',
+  require 'plugins.tabout',
+}
