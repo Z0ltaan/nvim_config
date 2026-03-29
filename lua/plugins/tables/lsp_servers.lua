@@ -24,7 +24,7 @@ local servers = {
       '-Declipse.product=org.eclipse.jdt.ls.core.product',
       '-Dlog.protocol=true',
       '-Dlog.level=ALL',
-      '-Xmx4g',
+      '-Xmx1g',
       '--add-modules=ALL-SYSTEM',
       '--add-opens', 'java.base/java.util=ALL-UNNAMED',
       '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
@@ -58,12 +58,40 @@ local servers = {
       },
     },
 
+    -- bundles = {
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-jupiter-api_5.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java /packages/java-test/0.43.2/extension/./server/junit-jupiter-engine_5.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-j upiter-migrationsupport_5.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-jupiter-params_5.11.0.jar",
+    --     "/home/georv/.lo cal/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-platform-commons_1.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/ extension/./server/junit-platform-engine_1.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-platform-launcher_1.11.0.ja r",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-platform-runner_1.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/package s/java-test/0.43.2/extension/./server/junit-platform-suite-api_1.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-platf orm-suite-commons_1.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-platform-suite-engine_1.11.0.jar",
+    --     "/home/georv/.l ocal/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/junit-vintage-engine_5.11.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/e xtension/./server/org.apiguardian.api_1.1.2.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/org.eclipse.jdt.junit4.runtime_1.3.10 0.v20231214-1952.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/org.eclipse.jdt.junit5.runtime_1.1.300.v20231214-1952.jar",
+    --     "/ho me/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/org.opentest4j_1.3.0.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43 .2/extension/./server/org.jacoco.core_0.8.14.202510111229.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-test/0.43.2/extension/./server/com.microsoft.java.test .plugin-0.43.1.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/java-debug/0.58.3/extension/./server/com.microsoft.java.debug.plugin-0.53.2.jar",
+    --     "/home/georv/.local/ share/nvim/nvim-java/packages/spring-boot-tools/1.55.1/extension/./jars/io.projectreactor.reactor-core.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/spring-boot-to ols/1.55.1/extension/./jars/org.reactivestreams.reactive-streams.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/spring-boot-tools/1.55.1/extension/./jars/jdt-ls-com mons.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packages/spring-boot-tools/1.55.1/extension/./jars/jdt-ls-extension.jar",
+    --     "/home/georv/.local/share/nvim/nvim-java/packag es/spring-boot-tools/1.55.1/extension/./jars/sts-gradle-tooling.jar",
+    --   },
+
     -- This sets the `initializationOptions` sent to the language server
     -- If you plan on using additional eclipse.jdt.ls plugins like java-debug
     -- you'll need to set the `bundles`
     --
     -- See https://codeberg.org/mfussenegger/nvim-jdtls#java-debug-installation
     init_options = {
+      -- ,
       settings = {
         java = {
           implementationsCodeLens = { enabled = true },
