@@ -13,6 +13,7 @@ return {
 
         vim.keymap.set('n', '<leader>sf', fzflua.files, { desc = '[S]earch [F]iles' }),
         vim.keymap.set('n', '<leader>sh', fzflua.helptags, { desc = '[S]earch [H]elp' }),
+        vim.keymap.set('n', '<leader>sg', fzflua.live_grep_native, { desc = '[S]earch [G]rep' }),
         vim.keymap.set('n', '<leader>sm', fzflua.man_pages, { desc = '[S]earch [M]anual pages' }),
         vim.keymap.set('n', '<leader><leader>', fzflua.buffers, { desc = '[ ] Search existing buffers' }),
         vim.keymap.set('n', '<leader>/', fzflua.grep_curbuf, { desc = '[/] Search current buffer only' }),
