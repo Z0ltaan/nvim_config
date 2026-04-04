@@ -1,5 +1,5 @@
 return {
-  -- require('plugins.nvim-java')
+  require('plugins.nvim-java'),
   require 'plugins.which_key',
   require 'plugins.blink_config',
   require 'plugins.devicons',
