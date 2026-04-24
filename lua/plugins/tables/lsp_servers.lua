@@ -14,7 +14,7 @@ local servers = {
   -- html = {},
   pyright = { cmd = { 'pyright-langserver', '--stdio' } },
   -- ts_ls = {},
-  glsl_analyzer = {},
+  -- glsl_analyzer = {},
 }
 
 return servers

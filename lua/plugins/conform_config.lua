@@ -37,7 +37,7 @@ return {
         markdown = { 'prettier' },
         markdown_inline = { 'prettier' },
         sql = { 'sql_formatter' },
-        -- python = {},
+        python = {'ruff_format'},
         javascript = { 'prettier' },
         -- html = { 'prettier' },
         typescript = { 'prettier' },

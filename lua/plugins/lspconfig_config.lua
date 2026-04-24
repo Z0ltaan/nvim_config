@@ -1,3 +1,5 @@
+-- NOTE: way outdated; NEEDS to be rewritten
+
 local formatters = require 'plugins.tables.formatters_list'
 local servers = require 'plugins.tables.lsp_servers'
 
